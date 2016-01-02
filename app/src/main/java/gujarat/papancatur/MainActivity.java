@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void stopMonitoring() {
         if (st != null) {
-            st.stop();
+            st.interrupt();
             st = null;
         }
     }
